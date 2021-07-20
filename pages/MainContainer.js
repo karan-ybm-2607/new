@@ -10,7 +10,8 @@ import { RiArticleFill } from 'react-icons/ri'
 import YBMLogo from '../public/Images/YBM-Logo.svg'
 import Image from 'next/image'
 import Header from '../Components/Header/Header';
-import AddEmployee from '../Components/Body/AddEmployee';
+import AddEmployee from '../Components/Body/Employee/Add Employee Module/AddEmployee';
+import Allemployees from '../Components/Body/Employee/View Employees/AllEmployees';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -59,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     },
     tabPanelStyle: {
         overflowY: 'scroll',
-        width: '100%'
+        height: 'calc(100% - 70px)'
     }
 }));
 
@@ -74,7 +75,7 @@ export default function VerticalTabs() {
     return (
 
         <div className={`${classes.root} ${styles.rootContainer}`}>
-            <Container className={styles.containerPadding}>
+            <Container className={styles.containerPadding} maxWidth="xl">
                 <Tabs
                     orientation="vertical"
                     variant="scrollable"
@@ -102,7 +103,8 @@ export default function VerticalTabs() {
                         Item Two
                     </TabPanel>
                     <TabPanel value={value} index={2} id={styles.tabPanel} className={classes.tabPanelStyle}>
-                        <AddEmployee />
+                        {/* <AddEmployee /> */}
+                        <Allemployees />
                     </TabPanel>
                     <TabPanel value={value} index={3}>
                         Item Four
@@ -124,6 +126,6 @@ export default function VerticalTabs() {
                 }
                 `}
             </style>
-        </div>
+        </div >
     );
 }

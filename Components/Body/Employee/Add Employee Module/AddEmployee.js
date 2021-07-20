@@ -1,9 +1,9 @@
 import React from 'react'
 import '@fontsource/roboto';
 import { StylesProvider, Typography } from '@material-ui/core';
-import styles from './AddEmployee.module.css'
+import styles from '../Add Employee Module/AddEmployee.module.css'
 import { makeStyles } from '@material-ui/core/styles';
-import AddEmployeeForm from './Form/AddEmployeeForm';
+import AddEmployeeForm from '../../Form/AddEmployeeForm';
 
 const useStyles = makeStyles({
     moduleTitle: {

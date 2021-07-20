@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 a {
@@ -14,4 +14,33 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.moduleTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+
+  /* grayscale / black */
+
+  color: #252733;
+}
+
+.MuiDataGrid-root .MuiDataGrid-window::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.MuiDataGrid-root .MuiDataGrid-window::-webkit-scrollbar {
+  height: 8px;
+  background-color: #F5F5F5;
+}
+
+.MuiDataGrid-root .MuiDataGrid-window::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: rgba(0, 150, 198, 1);
 }

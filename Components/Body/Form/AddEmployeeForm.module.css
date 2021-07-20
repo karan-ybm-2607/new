@@ -4,3 +4,14 @@
     display: block;
     margin: 35px 0;
 }
+
+.uploadDoc {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+}
