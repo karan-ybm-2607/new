@@ -12,6 +12,7 @@ import Image from 'next/image'
 import Header from '../Components/Header/Header';
 import AddEmployee from '../Components/Body/Employee/Add Employee Module/AddEmployee';
 import Allemployees from '../Components/Body/Employee/View Employees/AllEmployees';
+import OrganizationProfile from '../Components/Body/Profile Setup/Organization/OrganizationProfile';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -103,8 +104,8 @@ export default function VerticalTabs() {
                         Item Two
                     </TabPanel>
                     <TabPanel value={value} index={2} id={styles.tabPanel} className={classes.tabPanelStyle}>
-                        {/* <AddEmployee /> */}
-                        <Allemployees />
+                        <AddEmployee />
+                        {/* <Allemployees /> */}
                     </TabPanel>
                     <TabPanel value={value} index={3}>
                         Item Four
@@ -113,7 +114,7 @@ export default function VerticalTabs() {
                         Item Five
                     </TabPanel>
                     <TabPanel value={value} index={5}>
-                        Item Six
+                        <OrganizationProfile />
                     </TabPanel>
                 </div>
             </Container>

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DataGrid, useGridSlotComponentProps } from '@material-ui/data-grid';
+import { DataGrid, useGridSlotComponentProps, GridToolbar } from '@material-ui/data-grid';
 import { useDemoData } from '@material-ui/x-grid-data-generator';
 import { createTheme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/styles';
@@ -72,6 +72,15 @@ const useStyles = makeStyles(
             ].join(','),
             WebkitFontSmoothing: 'auto',
             letterSpacing: 'normal',
+            '& .MuiDataGrid-toolbarContainer': {
+                justifyContent: 'flex-end',
+                '& button': {
+                    color: 'rgba(0, 150, 198, 1)',
+                    '& .MuiBadge-badge': {
+                        backgroundColor: 'rgba(0, 150, 198, 1)'
+                    }
+                }
+            },
             '& .MuiDataGrid-columnsContainer': {
                 backgroundColor: theme.palette.type === 'light' ? '#fafafa' : '#1d1d1d',
             },
@@ -94,6 +103,13 @@ const useStyles = makeStyles(
             },
             '& .MuiPaginationItem-root': {
                 borderRadius: 0,
+            },
+            '& .MuiDataGrid-window': {
+                overflow: 'hidden'
+            },
+            '& .MuiDataGrid-window:hover': {
+                overflowX: 'auto',
+                overflowY: 'auto'
             },
             ...customCheckbox(theme),
         },
@@ -147,6 +163,12 @@ const Allemployees = () => {
                     pageSize={25}
                     components={{
                         Pagination: CustomPagination,
+                        Toolbar: GridToolbar,
+                    }}
+                    filterModel={{
+                        items: [
+                            { columnField: 'commodity', operatorValue: 'contains', value: 'rice' },
+                        ],
                     }}
                     {...data}
                 />
