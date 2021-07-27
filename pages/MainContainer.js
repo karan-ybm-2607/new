@@ -97,23 +97,22 @@ export default function VerticalTabs() {
                 </Tabs>
                 <div className={styles.viewContainer}>
                     <div><Header /></div>
-                    <TabPanel value={value} index={0}>
+                    <TabPanel value={value} index={0} id={styles.tabPanel} className={classes.tabPanelStyle}>
                         Item One 1
                     </TabPanel>
-                    <TabPanel value={value} index={1}>
+                    <TabPanel value={value} index={1} id={styles.tabPanel} className={classes.tabPanelStyle}>
                         Item Two
                     </TabPanel>
                     <TabPanel value={value} index={2} id={styles.tabPanel} className={classes.tabPanelStyle}>
                         <AddEmployee />
-                        {/* <Allemployees /> */}
                     </TabPanel>
-                    <TabPanel value={value} index={3}>
+                    <TabPanel value={value} index={3} id={styles.tabPanel} className={classes.tabPanelStyle}>
                         Item Four
                     </TabPanel>
-                    <TabPanel value={value} index={4}>
+                    <TabPanel value={value} index={4} id={styles.tabPanel} className={classes.tabPanelStyle}>
                         Item Five
                     </TabPanel>
-                    <TabPanel value={value} index={5}>
+                    <TabPanel value={value} index={5} id={styles.tabPanel} className={classes.tabPanelStyle}>
                         <OrganizationProfile />
                     </TabPanel>
                 </div>

@@ -4,6 +4,7 @@ import { StylesProvider, Typography } from '@material-ui/core';
 import styles from '../Add Employee Module/AddEmployee.module.css'
 import { makeStyles } from '@material-ui/core/styles';
 import AddEmployeeForm from '../../Form/AddEmployeeForm';
+import { THEME_COLOR } from '../../../../lib/config';
 
 const useStyles = makeStyles({
     moduleTitle: {
@@ -21,7 +22,7 @@ const useStyles = makeStyles({
         fontSize: 28,
         lineHeight: '35px',
         letterSpacing: 0.3,
-        color: '#0096C6',
+        color: THEME_COLOR.Theme_Primary,
     }
 });
 const AddEmployee = () => {

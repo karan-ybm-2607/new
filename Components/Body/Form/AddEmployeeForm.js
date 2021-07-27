@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import { ThemeProvider } from "@material-ui/styles";
 import DateFnsUtils from '@date-io/date-fns';
-import { TextField, Select, FormControlLabel, Radio, createMuiTheme, RadioGroup, Typography, InputLabel, FormLabel, MenuItem, FormHelperText, FormControl, OutlinedInput, InputAdornment, Button, ButtonGroup } from "@material-ui/core";
+import { TextField, Select, FormControlLabel, Radio, createMuiTheme, RadioGroup, Typography, InputLabel, FormLabel, MenuItem, FormControl, OutlinedInput, InputAdornment, Button, ButtonGroup } from "@material-ui/core";
 import { MuiPickersUtilsProvider, KeyboardDatePicker, } from '@material-ui/pickers';
 import { IoCloudUpload } from 'react-icons/io5'
-import { styles } from '@material-ui/pickers/views/Calendar/Calendar';
-import Styles from './AddEmployeeForm.module.css'
+import { THEME_COLOR, THEME_CONFIG } from '../../../lib/config';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,16 +24,16 @@ const useStyles = makeStyles((theme) => ({
         // "& ."
         "& .MuiOutlinedInput-root": {
             "& fieldset": {
-                borderRadius: "24px",
-                borderColor: "#0096C6",
-                borderWidth: "2px"
+                borderRadius: THEME_CONFIG.Theme_border_radius,
+                borderColor: THEME_COLOR.Theme_Primary,
+                borderWidth: THEME_CONFIG.Theme_border_width
             }, "&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline": {
-                borderColor: "#0096c6",
-                borderWidth: "2px"
+                borderColor: THEME_COLOR.Theme_Primary,
+                borderWidth: THEME_CONFIG.Theme_border_width
             },
             "&.Mui-focused fieldset": {
-                borderColor: "#0096c6",
-                borderWidth: "2px"
+                borderColor: THEME_COLOR.Theme_Primary,
+                borderWidth: THEME_CONFIG.Theme_border_width
             }
         }
     },
@@ -50,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 28,
         lineHeight: '35px',
         letterSpacing: 0.3,
-        color: '#0096C6',
+        color: THEME_COLOR.Theme_Primary,
     },
     input: {
         display: 'none',
@@ -60,13 +59,13 @@ const useStyles = makeStyles((theme) => ({
             marginLeft: '15px'
         },
         "&:hover": {
-            backgroundColor: '#0096C6',
+            backgroundColor: THEME_COLOR.Theme_Primary,
             color: '#F7F8FC',
 
         },
-        backgroundColor: '#0096C6',
-        border: '2px solid #0096C6',
-        borderRadius: '24px',
+        backgroundColor: THEME_COLOR.Theme_Primary,
+        border: `2px solid ${THEME_COLOR.Theme_Primary}`,
+        borderRadius: THEME_CONFIG.Theme_border_radius,
         fontWeight: '500',
         fontSize: '16px',
         lineHeight: '20px',
@@ -97,15 +96,15 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '22px',
         lineHeight: '28px',
         letterSpacing: ' 0.2px',
-        border: '2px solid #0096C6',
+        border: `2px solid ${THEME_COLOR.Theme_Primary}`,
         margin: '10px 25px',
         textTransform: 'capitalize',
     },
     btnOutline: {
         "&:hover": {
-            backgroundColor: '#0096c6',
+            backgroundColor: THEME_COLOR.Theme_Primary,
             color: '#fff',
-            border: '2px solid #0096C6',
+            border: `2px solid ${THEME_COLOR.Theme_Primary}`,
 
         },
         color: 'rgba(0, 0, 0, 1)'
@@ -114,9 +113,9 @@ const useStyles = makeStyles((theme) => ({
         "&:hover": {
             backgroundColor: '#fff',
             color: 'rgba(0, 0, 0, 1)',
-            border: '2px solid #0096C6',
+            border: `2px solid ${THEME_COLOR.Theme_Primary}`,
         },
-        backgroundColor: '#0096c6'
+        backgroundColor: THEME_COLOR.Theme_Primary,
     }
 }));
 const materialTheme = createMuiTheme({
@@ -172,6 +171,7 @@ const AddEmployeeForm = () => {
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <ThemeProvider theme={materialTheme} className={classes.root}>
                     <KeyboardDatePicker
+                        inputVariant="outlined"
                         disableToolbar
                         variant="inline"
                         format="dd/mm/yyyy"
@@ -227,6 +227,7 @@ const AddEmployeeForm = () => {
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <ThemeProvider theme={materialTheme} className={classes.root}>
                     <KeyboardDatePicker
+                        inputVariant="outlined"
                         disableToolbar
                         variant="inline"
                         format="dd/mm/yyyy"
@@ -319,6 +320,7 @@ const AddEmployeeForm = () => {
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <ThemeProvider theme={materialTheme} className={classes.root}>
                     <KeyboardDatePicker
+                        inputVariant="outlined"
                         disableToolbar
                         variant="inline"
                         format="dd/mm/yyyy"
