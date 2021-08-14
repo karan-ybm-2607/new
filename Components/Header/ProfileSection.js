@@ -7,7 +7,7 @@ import { GoSearch } from 'react-icons/go'
 import { AiOutlineLogout } from 'react-icons/ai'
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import { ListItemIcon, MenuItem, Menu, Button, IconButton, Avatar, ListItemText } from '@material-ui/core';
-import { deepOrange, deepPurple } from '@material-ui/core/colors';
+import { deepOrange } from '@material-ui/core/colors';
 
 const StyledMenu = withStyles({
     paper: {
@@ -40,10 +40,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: deepOrange[500],
         marginRight: 15
     },
-    purple: {
-        color: theme.palette.getContrastText(deepPurple[500]),
-        backgroundColor: deepPurple[500],
-    },
+
 }));
 const StyledMenuItem = withStyles((theme) => ({
     root: {
@@ -90,7 +87,9 @@ const ProfileSection = () => {
                     // color="#000"
                     onClick={handleClick}
                 >
-                    <Avatar className={classes.orange}>K</Avatar> Karan Singh
+                    <div className={classes.root}>
+                        <Avatar className={classes.orange}>K</Avatar> Karan Singh
+                    </div>
                 </Button>
                 <StyledMenu
                     id="customized-menu"

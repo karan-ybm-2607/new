@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { MenuItem, TextField, InputLabel, FormControl, Select, createMuiTheme } from '@material-ui/core/';
+import { MenuItem, TextField, InputLabel, FormControl, Select } from '@material-ui/core/';
+import { createTheme } from '@material-ui/core/styles';
 import { THEME_COLOR } from '../../../../../../lib/config';
 import { MuiPickersUtilsProvider, KeyboardDatePicker, } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
         minWidth: 120,
     },
 }));
-const materialTheme = createMuiTheme({
+const materialTheme = createTheme({
     overrides: {
         MuiPickersToolbar: {
             toolbar: {

@@ -12,6 +12,7 @@ import Overview from '../Organization Forms/Profile Form/Overview';
 import Addresses from '../Organization Forms/Address Form/Addresses';
 import Administrator from '../Organization Forms/Admin/Administrator';
 import Statutory from '../Organization Forms/Statutory/Statutory';
+import Activation from '../Organization Forms/Activation/Activation';
 
 
 function TabPanel(props) {
@@ -88,7 +89,7 @@ const OrganizationDetails = () => {
                     value={value}
                     onChange={handleChange}
                     indicatorColor="primary"
-                    textColor={THEME_COLOR.Theme_Primary}
+                    textcolor={THEME_COLOR.Theme_Primary}
                     variant="fullWidth"
                     scrollButtons="auto"
 
@@ -97,7 +98,7 @@ const OrganizationDetails = () => {
                     <Tab label="Address" {...a11yProps(1)} />
                     <Tab label="Admin" {...a11yProps(2)} />
                     <Tab label="Statutory" {...a11yProps(3)} />
-
+                    <Tab label="Activation" {...a11yProps(4)} />
                 </Tabs>
             </AppBar>
             <SwipeableViews
@@ -116,6 +117,9 @@ const OrganizationDetails = () => {
                 </TabPanel>
                 <TabPanel value={value} index={3} dir={theme.direction}>
                     <Statutory />
+                </TabPanel>
+                <TabPanel value={value} index={4} dir={theme.direction}>
+                    <Activation />
                 </TabPanel>
             </SwipeableViews>
         </div>

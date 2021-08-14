@@ -5,6 +5,7 @@ import styles from '../Add Employee Module/AddEmployee.module.css'
 import { makeStyles } from '@material-ui/core/styles';
 import AddEmployeeForm from '../../Form/AddEmployeeForm';
 import { THEME_COLOR } from '../../../../lib/config';
+import { useRouter } from 'next/router'
 
 const useStyles = makeStyles({
     moduleTitle: {
@@ -25,7 +26,9 @@ const useStyles = makeStyles({
         color: THEME_COLOR.Theme_Primary,
     }
 });
+
 const AddEmployee = () => {
+    const router = useRouter()
     const classes = useStyles();
 
     return (

@@ -1,6 +1,8 @@
 import React from 'react'
 import { IconButton, makeStyles, TextField, Typography } from '@material-ui/core'
 import { MdModeEdit } from 'react-icons/md'
+import { THEME_COLOR } from '../../../../../../lib/config'
+import Edit_Icon from '../../../../../Layout/Sidebar/Edit_Icon'
 const useStyles = makeStyles((theme) => ({
     root: {
         "& .MuiFormLabel-root": {
@@ -17,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
             marginTop: 20
         },
         '& .MuiFormLabel-root.Mui-focused': {
-            color: 'rgba(0, 150, 198, 1)'
+            color: THEME_COLOR.Theme_Primary
         }
 
     },
@@ -51,7 +53,7 @@ const Overview = () => {
         <div className={classes.root}>
             <div className={classes.TitleHeader}>
                 <Typography className={classes.title}>Overview</Typography>
-                <IconButton><MdModeEdit className={classes.editDetails} fontSize={18} /></IconButton>
+                <Edit_Icon className={classes.editDetails} />
             </div>
             <TextField id="outlined-basic" label="Organization Name" variant="outlined" className={classes.TextInput} />
             <TextField id="outlined-basic" label="Company Name" variant="outlined" className={classes.TextInput} />

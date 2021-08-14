@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/styles';
 import Pagination from '@material-ui/lab/Pagination';
 import PaginationItem from '@material-ui/lab/PaginationItem';
 import { Typography } from '@material-ui/core';
+import { THEME_COLOR } from '../../../../lib/config';
 function customCheckbox(theme) {
     return {
         '& .MuiCheckbox-root svg': {
@@ -73,11 +74,11 @@ const useStyles = makeStyles(
             WebkitFontSmoothing: 'auto',
             letterSpacing: 'normal',
             '& .MuiDataGrid-toolbarContainer': {
-                justifyContent: 'flex-end',
+                // justifyContent: 'flex-end',
                 '& button': {
-                    color: 'rgba(0, 150, 198, 1)',
+                    color: THEME_COLOR.Theme_Primary,
                     '& .MuiBadge-badge': {
-                        backgroundColor: 'rgba(0, 150, 198, 1)'
+                        backgroundColor: THEME_COLOR.Theme_Primary
                     }
                 }
             },

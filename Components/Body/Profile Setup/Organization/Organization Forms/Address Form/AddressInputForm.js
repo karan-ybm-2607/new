@@ -1,5 +1,6 @@
 import React from 'react'
 import { IconButton, makeStyles, TextField, Typography } from '@material-ui/core'
+import { THEME_COLOR } from '../../../../../../lib/config';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
             marginTop: 20
         },
         '& .MuiFormLabel-root.Mui-focused': {
-            color: 'rgba(0, 150, 198, 1)'
+            color: THEME_COLOR.Theme_Primary
         }
 
     },
