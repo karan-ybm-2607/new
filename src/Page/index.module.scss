@@ -1,0 +1,22 @@
+@import '../lib/COLOR.scss';
+
+.MainContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.BodyContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.SidebarContainer {
+    width: 20%;
+}
+
+.ContentContainer {
+    width: 80%;
+}
