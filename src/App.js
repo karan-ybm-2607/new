@@ -1,4 +1,4 @@
-import './App.css';
+import Styles from './App.scss';
 import Layout from './Page/index'
 function App() {
   return (
