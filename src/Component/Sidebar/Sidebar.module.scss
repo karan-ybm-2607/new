@@ -1,0 +1,27 @@
+@import '../../lib/COLOR.scss';
+
+.SidebarContainer{
+    background-color: $COLOR_TEXT;
+    box-shadow: $BOX_SHADOW;
+    border-radius: 35px;
+    padding: 20px;
+    height: inherit;
+}
+.NavItem{
+    color: $PRIMARY_COLOR;
+    font-weight: 700;
+    font-size: 18px;
+}
+.NavItem:hover{
+    color: $TERNORY_COLOR;
+}
+.Range{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $FONT_FAMILY;
+    color: $PRIMARY_COLOR;
+    width: 100%;
+}
+.Check *::before{
+    border-color: $PRIMARY_COLOR !important;
+}

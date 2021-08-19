@@ -4,4 +4,25 @@
 background-color: $BG_COLOR;
 min-height: 100vh;
 }
-
+.navbar-light .navbar-nav .nav-link{
+    color: $PRIMARY_COLOR !important;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: $SECONDARY_COLOR !important;
+}
+.nav-link.active{
+    color: $TERNORY_COLOR;
+}
+.modal-90w{
+    width: 90% !important;
+    max-width: none !important;
+}
+.rs-dropdown-toggle.rs-btn{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $FONT_FAMILY;
+    color: $PRIMARY_COLOR;
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+}

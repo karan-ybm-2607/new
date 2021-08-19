@@ -1,0 +1,77 @@
+@import '../../lib/COLOR.scss';
+
+.CardContainer{
+    box-shadow: $BOX_SHADOW;
+    background-color: $COLOR_WHITE;
+    border-radius: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ProfileImage{
+    width: 320px;
+    height: 286px;
+    object-fit: cover;
+    border-top-left-radius: 35px !important;
+    border-top-right-radius: 35px !important;
+}
+.BasicDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Name{
+    color: $TERNORY_COLOR;
+    font-weight: 700;;
+}
+.Age{
+    margin-bottom: .5rem;
+    font-weight: 500;
+
+}
+.CardContainerBody{
+    padding: 25px !important;
+}
+.NameBody{
+    padding-bottom: 0 !important;
+}
+.ModalHeader{
+    border: none !important;
+}
+.modal-90w{
+    width: 90%;
+    max-width: none !important;
+}
+.ModalCards{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1025px;
+    margin: auto;
+    padding-bottom: 45px;
+    line-height: 35px;
+}
+.DetailsContainer{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.ModalImg{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.ModalName{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: $FONT_FAMILY;
+    color: $TERNORY_COLOR;
+}
+.ModalGender{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: $FONT_FAMILY;
+}
+.ModalCast{
+    font-size: 18px;
+    font-family: $FONT_FAMILY;
+
+}

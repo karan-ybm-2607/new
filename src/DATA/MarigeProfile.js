@@ -1,0 +1,72 @@
+const ProfileCardData = [
+  {
+    "id": 1,
+    "Name": "Aman Chandra",
+    "Gender": "Male",
+    "Age": 24,
+    "Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi.",
+    "ProfileImg": "https://m.media-amazon.com/images/M/MV5BMTUzMTk3MjItOGY3Ni00YjdmLTllNGYtMWJlY2FkYjJlNzI5XkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_.jpg",
+    "Religion": "Hindu",
+    "Cast": "Rajput",
+    "Gotra": "Lorem ipsum",
+    "Color": "Dusky",
+    "Address": "C-9/30, Girnar colony, Mansarover Ext., Jaipur, Rajasthan, 302020",
+    "ContactNo": "+91-9758965412",
+    "Email": "example@example.com",
+    "Occupation": "Software Engineer at Google"
+  },
+  {
+    "id": 2,
+    "Name": "Rahul Chandra",
+    "Gender": "Male",
+    "Age": 24,
+    "Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi.",
+    "ProfileImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9aITWbWSmOl4TvQTqLVyFAl4JR--Y1iZ5A&usqp=CAU",
+    "Religion": "Hindu",
+    "Cast": "Rajput",
+    "Gotra": "Lorem ipsum",
+    "Color": "Dusky",
+    "Address": "C-9/30, Girnar colony, Mansarover Ext., Jaipur, Rajasthan, 302020",
+    "ContactNo": "+91-9758965412",
+    "Email": "example@example.com",
+    "Occupation": "Software Engineer at Google"
+  },
+  {
+    "id": 3,
+    "Name": "Rakshit Chandra",
+    "Gender": "Male",
+    "Age": 24,
+    "Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi.",
+    "ProfileImg": "https://m.media-amazon.com/images/M/MV5BMTUzMTk3MjItOGY3Ni00YjdmLTllNGYtMWJlY2FkYjJlNzI5XkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_.jpg",
+    "Religion": "Hindu",
+    "Cast": "Rajput",
+    "Gotra": "Lorem ipsum",
+    "Color": "Dusky",
+    "Address": "C-9/30, Girnar colony, Mansarover Ext., Jaipur, Rajasthan, 302020",
+    "ContactNo": "+91-9758965412",
+    "Email": "example@example.com",
+    "Occupation": "Software Engineer at Google"
+  },
+  {
+    "id": 4,
+    "Name": "gaurav Chandra",
+    "Gender": "Male",
+    "Age": 24,
+    "Desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi.",
+    "ProfileImg": "https://m.media-amazon.com/images/M/MV5BMTUzMTk3MjItOGY3Ni00YjdmLTllNGYtMWJlY2FkYjJlNzI5XkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_.jpg",
+    "Religion": "Hindu",
+    "Cast": "Rajput",
+    "Gotra": "Lorem ipsum",
+    "Color": "Dusky",
+    "Address": "C-9/30, Girnar colony, Mansarover Ext., Jaipur, Rajasthan, 302020",
+    "ContactNo": "+91-9758965412",
+    "Email": "example@example.com",
+    "Occupation": "Software Engineer at Google"
+  }
+]
+
+export default ProfileCardData;

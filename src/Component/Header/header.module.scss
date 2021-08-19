@@ -1,5 +1,26 @@
 @import '../../lib/COLOR.scss';
 
+$TemplateWidth: 100%;
+$LeftPannel: $TemplateWidth*0.20;
+$RightPannel: $TemplateWidth*0.20;
+$MidPannel: $TemplateWidth - ($LeftPannel + $RightPannel);
+$PaddingX: 50px;
+$PaddingY: 20px;
+
 .HeaderComponent {
-    display: 'flex';
+    display: flex;
+    padding-left: $PaddingX;
+    padding-right: $PaddingX;
+    padding-top: $PaddingY;
+    padding-bottom: $PaddingY;
+    align-items: center;
+}
+.LogoContainer{
+    width: $LeftPannel;
+}
+.NavContainer{
+    width: $MidPannel;
+}
+.ProfileContainer{
+    width: $RightPannel ;
 }

@@ -1,0 +1,19 @@
+@import '../../../lib/COLOR.scss';
+$PaddingX: 20px;
+
+.NavMenu{
+    font-weight: 700 !important;
+    color: $PRIMARY_COLOR !important;
+    font-family: $FONT_FAMILY;
+    justify-content: center !important;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: $SECONDARY_COLOR !important;
+}
+.NavItems{
+    padding-left: $PaddingX !important ;
+    padding-right: $PaddingX !important;
+    text-decoration: none;
+    color: $PRIMARY_COLOR !important;
+
+}

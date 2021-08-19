@@ -1,4 +1,6 @@
 @import '../lib/COLOR.scss';
+$PaddingX: 50px;
+$PaddingY: 20px;
 
 .MainContainer {
     display: flex;
@@ -15,8 +17,14 @@
 
 .SidebarContainer {
     width: 20%;
+    padding-right: $PaddingX;
+    padding-left: $PaddingX;
+    padding-top: $PaddingY;
+    padding-bottom: $PaddingY;
 }
 
 .ContentContainer {
     width: 80%;
+    padding-right: $PaddingX;
+
 }

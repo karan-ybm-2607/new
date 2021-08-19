@@ -1,0 +1,20 @@
+@import '../../lib/COLOR.scss';
+
+.BtnTheme{
+    background-color: $PRIMARY_COLOR;
+    color: $COLOR_TEXT;
+    border-color: $PRIMARY_COLOR;
+    font-weight: 500;
+}
+.Input{
+    height: 55px;
+    border-radius: 15px;
+}
+.InputImg{
+    text-decoration: none;
+    color: #080807 !important;
+    font-size: 18px;
+    font-family: $FONT_FAMILY;
+    font-weight: 500;
+    margin-bottom: 20px;
+}

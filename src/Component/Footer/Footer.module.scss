@@ -1,0 +1,14 @@
+@import '../../lib/COLOR.scss';
+
+.Footer{
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: khaki;
+    margin-top: 80px;
+    background-color: $BG_COLOR;
+    padding: 30px;
+}
+.Credit{
+    font-size: 16px;
+    font-weight: 400;
+}

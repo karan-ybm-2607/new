@@ -1,0 +1,19 @@
+@import '../../lib/COLOR.scss';
+
+.Tagline{
+    color: $PRIMARY_COLOR;
+    font-weight: 700;
+    font-family: $FONT_FAMILY;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+.ContentContainer{
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        height: inherit;
+}

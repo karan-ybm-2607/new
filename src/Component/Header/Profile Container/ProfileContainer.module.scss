@@ -1,0 +1,33 @@
+@import '../../../lib/COLOR.scss';
+
+.Dropdown{
+    border: none !important;
+    background-color: inherit !important;
+    color: $PRIMARY_COLOR !important;
+    font-family: $FONT_FAMILY;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.Dropdown *{
+    color: $PRIMARY_COLOR !important;
+    background-color: inherit !important;
+border: none !important ;
+}
+.Btn{
+    background-color: inherit !important;
+    border: none !important;
+    outline: none !important;
+    font-weight: 500 !important;
+}
+.Btn:focus{
+    outline: none;
+    box-shadow: none !important;
+}
+.BtnContent{
+    background-color: $BG_COLOR !important;
+    box-shadow: $BOX_SHADOW;
+    border: none !important;
+}
+.MenuItems:hover{
+    background-color: $SECONDARY_COLOR !important;
+}
