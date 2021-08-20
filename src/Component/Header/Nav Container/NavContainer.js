@@ -23,10 +23,8 @@ const NavContainer = () => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                             <Nav className={`${Styles.NavMenu}`}>
-                                <ul>
-                                    <Link to="/" className={Styles.NavItems}>Home</Link>
-                                    <Link to="/AddNewProfile" className={Styles.NavItems} onClick={routeChange}>Add Profile</Link>
-                                </ul>
+                                <Nav.Link href="/" className={Styles.NavItems}>Home</Nav.Link>
+                                <Nav.Link href="/AddNewProfile" className={Styles.NavItems} onClick={routeChange}>Add Profile</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
