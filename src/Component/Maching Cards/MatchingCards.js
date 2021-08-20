@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import Card from 'react-bootstrap/Card'
-import Styles from './MatchingCards.module.scss'
+import React, { useState } from 'react';
+import Card from 'react-bootstrap/Card';
+import Image from 'react-bootstrap/Image';
 import ReadMoreReact from 'read-more-react';
-import Image from 'react-bootstrap/Image'
 import { Modal } from 'rsuite';
+import Styles from './MatchingCards.module.scss';
 
 function DataContainerModal(props) {
     console.log(props.cardMdelDetails)
@@ -51,7 +51,7 @@ function DataContainerModal(props) {
 
 
 const MatchingCards = (props) => {
-    const { id, Name, Gender, Age, Desc, Excerpt, ProfileImg, Religion, Cast, Gotra, Color, Address, ContactNo, Email } = props.CardDetails
+    const { id, Name, Age, Excerpt, ProfileImg } = props.CardDetails
     const [modalShow, setModalShow] = React.useState(false);
     const [CardMdelDetails, setCardMdelDetails] = useState({})
     const showCardDetails = (CardDetails) => {

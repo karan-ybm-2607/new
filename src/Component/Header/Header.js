@@ -1,15 +1,11 @@
 import React from 'react'
+import {
+    BrowserRouter as Router
+} from "react-router-dom"
 import Styles from './header.module.scss'
 import LogoContainer from './Logo Container/LogoContainer'
 import NavContainer from './Nav Container/NavContainer'
 import ProfileContainer from './Profile Container/ProfileContainer'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-import BodyContent from '../Body Content/BodyContent'
 
 
 const Header = () => {

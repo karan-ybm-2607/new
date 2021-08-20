@@ -1,19 +1,16 @@
-import { lazy } from "react";
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import BodyContent from '../Component/Body Content/BodyContent'
+import AddPerson from '../Component/Add Person Form/AddPerson'
+const Routes = () => {
+    return (
+        <Router>
+            <Switch>
+                <Route path="/" exact={true} component={BodyContent} />
+                <Route path="/AddNewProfile" component={AddPerson} />
+            </Switch>
+        </Router>
+    )
+}
 
-const Home = lazy(() => import("../Page/index"))
-const NewProfile = lazy(() => import("../Page/AddNewProfile"))
-const AllProfiles = lazy(() => import("../Component/Body Content/BodyContent"))
-export const PublicRoutes = [
-    {
-        path: "/AddNewProfile",
-        component: NewProfile,
-        exact: false,
-        main: () => <h2>qqqqqqqqqqqq</h2>
-    },
-    {
-        path: "/",
-        component: Home,
-        exact: true,
-        main: () => <h2>eeee</h2>
-    }
-]
+export default Routes
