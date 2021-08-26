@@ -1,8 +1,10 @@
 import React from 'react'
 import { IconButton, makeStyles, TextField, Typography } from '@material-ui/core'
 import { MdModeEdit } from 'react-icons/md'
-import { THEME_COLOR } from '../../../../../../lib/config'
-import Edit_Icon from '../../../../../Layout/Sidebar/Edit_Icon'
+import { Styles, THEME_COLOR } from '../../../../../../lib/config'
+import Edit_Icon from '../../../../../Layout/Edit_Icon'
+
+
 const useStyles = makeStyles((theme) => ({
     root: {
         "& .MuiFormLabel-root": {

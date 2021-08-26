@@ -5,7 +5,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 // import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import { MdExpandMore } from 'react-icons/md';
-import { THEME_COLOR } from '../../../../../../lib/config';
+import { Styles, THEME_COLOR } from '../../../../../../lib/config';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import AddressInputForm from './AddressInputForm';
 

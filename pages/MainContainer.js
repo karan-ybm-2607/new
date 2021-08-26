@@ -10,13 +10,16 @@ import MenuIcon from '@material-ui/icons/Menu';
 import clsx from 'clsx';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import AddEmployeeForm from '../Components/Body/Form/AddEmployeeForm';
+import AddEmployeeForm from '../Components/Body/Employee/Add Employee Module/Form/AddEmployeeForm';
+import Overview from '../Components/Body/Overview/Overview';
 import ProfileSection from '../Components/Header/ProfileSection';
-import Sidebar_Layout from '../Components/Layout/Sidebar/Sidebar_Layout';
-import { THEME_COLOR } from '../lib/config';
+import Sidebar_Layout from '../Components/Sidebar/Sidebar_Layout';
 import YBM_LOGO from '../public/Images/YBM-Logo.svg';
 import styles from './MainContainer.module.css';
-
+import { THEME_CONFIG, THEME_COLOR } from '../lib/config'
+import OrganizationDetails from '../Components/Body/Profile Setup/Organization/Organization Details/OrganizationDetails';
+import OrganizationProfile from '../Components/Body/Profile Setup/Organization/OrganizationProfile';
+import Allemployees from '../Components/Body/Employee/View Employees/AllEmployees';
 
 const drawerWidth = 240;
 
@@ -128,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function VerticalTabs() {
+export default function VerticalTabs(props) {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
@@ -143,43 +146,53 @@ export default function VerticalTabs() {
     const handleDrawerClose = () => {
         setOpen(false);
     };
-
+    const SubMunuHandeler = (event, index) => {
+        setSubMenuOpen(!SubMenuOpen)
+    }
     // SIDEBAR FUNCTIONS
     const handleListItemClick = (event, index) => {
         setSelectedIndex(index);
-        index == 1 ? setOpen(true) : setOpen(false)
+        index == 1 ? setSubMenuOpen(true) : setSubMenuOpen(false)
         console.log('se', event?.target?.innerText)
         setSelectedTab(event?.target?.innerText)
     };
 
-    const hanndleListClick = () => {
-        handleListItemClick(event, 0)
-        console.log('sr', event?.target?.innerText)
-    }
+
     let pageContent = ('')
     switch (SelectedTab) {
 
         case 'Overview':
             pageContent = (
-                <div className="col-10 text-center">Overview Section</div>)
+                <div className="col-10 text-center">
+                    <Overview Title="Overview" />
+                </div>)
             break;
-        case 'Salary':
+        case 'Add Employee':
             pageContent = (
 
-                <AddEmployeeForm hanndleListClick={hanndleListClick} handleListItemClick={handleListItemClick} SubMenuOpen={SubMenuOpen} selectedIndex={selectedIndex} />
+                <AddEmployeeForm />
             )
             break;
-
+        case 'Employee':
+            pageContent = (
+                <div className="col-10 text-center">
+                    <Allemployees />
+                </div>
+            )
+            break;
         default:
-            'hiii'
+            pageContent = (
+                <div className="col-10 text-center">
+
+                    <OrganizationProfile />
+                </div>)
     }
 
 
     return (
 
         <div className={`${classes.root} ${styles.rootContainer}`}>
-            {/* <div className={classes.sidebar}><Sidebar_Layout /></div>
-            <div><Header /></div> */}
+
             <CssBaseline />
             <AppBar
                 position="fixed"
@@ -231,12 +244,12 @@ export default function VerticalTabs() {
                         {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
                     </IconButton>
                 </div>
-                <Sidebar_Layout />
-                <main className={classes.content} id="ModuleContainer">
-                    <div className={classes.toolbar} />
-                    {pageContent}
-                </main>
+                <Sidebar_Layout SubMunuHandeler={SubMunuHandeler} handleListItemClick={handleListItemClick} SubMenuOpen={SubMenuOpen} selectedIndex={selectedIndex} />
             </Drawer>
+            <main className={classes.content} id="ModuleContainer">
+                <div className={classes.toolbar} />
+                {pageContent}
+            </main>
 
         </div >
     );

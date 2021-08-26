@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, makeStyles, TextField } from '@material-ui/core'
 import { BiCheck } from 'react-icons/bi'
-import { THEME_COLOR, THEME_CONFIG } from '../../../../../../lib/config'
+import { Styles, THEME_COLOR, THEME_CONFIG } from '../../../../../../lib/config'
 
 const useStyles = makeStyles((theme) => ({
     root: {

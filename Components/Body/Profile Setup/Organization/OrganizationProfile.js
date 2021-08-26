@@ -4,7 +4,7 @@ import { Avatar, Typography, Button, Grid } from '@material-ui/core';
 import { deepOrange, green } from '@material-ui/core/colors';
 import { IoCamera } from 'react-icons/io5'
 import OrganizationDetails from './Organization Details/OrganizationDetails';
-import { THEME_COLOR, THEME_CONFIG } from '../../../../lib/config';
+import { Styles, THEME_COLOR, THEME_CONFIG } from '../../../../lib/config';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { ImFacebook } from 'react-icons/im'
 import { FiInstagram } from 'react-icons/fi'

@@ -3,7 +3,7 @@ import { InputBase } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
 import { makeStyles } from '@material-ui/core/styles';
-import { THEME_COLOR, THEME_CONFIG } from '../../../../../../lib/config';
+import { Styles, THEME_COLOR, THEME_CONFIG } from '../../../../../../lib/config';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
             borderWidth: THEME_CONFIG.Theme_border_width,
             borderStyle: 'solid',
             borderColor: THEME_COLOR.Theme_Primary,
-            borderRadius: THEME_CONFIG.Theme_border_radius
+            borderRadius: THEME_COLOR.Theme_border_radius
         },
         width: 'inherit'
     },

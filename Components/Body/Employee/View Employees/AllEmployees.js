@@ -3,10 +3,10 @@ import { DataGrid, useGridSlotComponentProps, GridToolbar } from '@material-ui/d
 import { useDemoData } from '@material-ui/x-grid-data-generator';
 import { createTheme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/styles';
-import Pagination from '@material-ui/lab/Pagination';
+import { Pagination } from '@material-ui/lab';
 import PaginationItem from '@material-ui/lab/PaginationItem';
 import { Typography } from '@material-ui/core';
-import { THEME_COLOR } from '../../../../lib/config';
+import { Styles, THEME_COLOR } from '../../../../lib/config';
 function customCheckbox(theme) {
     return {
         '& .MuiCheckbox-root svg': {

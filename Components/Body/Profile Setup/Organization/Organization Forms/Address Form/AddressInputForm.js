@@ -1,6 +1,6 @@
 import React from 'react'
 import { IconButton, makeStyles, TextField, Typography } from '@material-ui/core'
-import { THEME_COLOR } from '../../../../../../lib/config';
+import { Styles, THEME_COLOR } from '../../../../../../lib/config';
 
 const useStyles = makeStyles((theme) => ({
     root: {
