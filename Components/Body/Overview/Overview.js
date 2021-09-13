@@ -51,7 +51,6 @@ const Overview = (props) => {
 
     return (
         <div>
-            <Typography variant="h1" component="h2">{props.Title}</Typography>
             <AreaChart
                 width={500}
                 height={400}

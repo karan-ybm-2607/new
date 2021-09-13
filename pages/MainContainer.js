@@ -164,6 +164,7 @@ export default function VerticalTabs(props) {
         case 'Overview':
             pageContent = (
                 <div className="col-10 text-center">
+                    <h3>{SelectedTab}</h3>
                     <Overview Title="Overview" />
                 </div>)
             break;

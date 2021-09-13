@@ -187,14 +187,6 @@ const AddEmployeeForm = () => {
         setValues({ ...values, [prop]: event.target.value });
 
     };
-    // useEffect(() => {
-    //     fetchLayout(setemployemnt).then(data => {
-
-    //     })
-    //     return () => {
-    //         cleanup
-    //     }
-    // }, [Employment])
     const handleDateChange = (date) => {
         setSelectedDob(date);
         setSelectedDoj(date);
