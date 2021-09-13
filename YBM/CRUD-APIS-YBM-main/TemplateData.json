@@ -1,0 +1,47 @@
+{
+  "salaryHeads": [
+    {
+      "salaryHeadsName": "",
+      "salaryHeadDefaultStr": "0.10",
+      "manualSalaryHeadInput": "0/1",
+      "salaryHeadManualStr": "",
+      "customSalaryHeads": [
+        {
+          "isCustomSalaryHead": "0/1",
+          "customSalaryHeadName": "",
+          "customSlaryHeadStr": ""
+        }
+      ]
+    }
+  ],
+  "allowance": [
+    {
+      "allowanceGiven": "0/1",
+      "allowanceName": "",
+      "allowanceStr": "",
+      "allowanceAmount": "",
+      "customallowance": [
+        {
+          "isCustomAllowance": "0/1",
+          "customAllowanceName": "",
+          "customAllowanceStr": ""
+        }
+      ]
+    }
+  ],
+  "Deduction": [
+    {
+      "allowDeduction": "0/1",
+      "deductionName": "",
+      "decutionStr": "",
+      "deductionAmount": "",
+      "customSalaryHeads": [
+        {
+          "isCustomDeduction": "0/1",
+          "customDeductionName": "",
+          "customDeductionStr": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+.MainContainer {
+    display: flex;
+    align-items: center;
+}
+
+.notificationBadge {
+    display: flex;
+}
+
+.utilities {
+    border-right: 1px solid rgba(223, 224, 235, 1);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.profileContainer {
+    padding: 0 15px;
+
+}
+
+.badgeContainer {
+    position: absolute !important;
+    top: 20px !important;
+}
+
+.badgeDot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+
+}

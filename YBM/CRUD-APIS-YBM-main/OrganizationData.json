@@ -1,0 +1,19 @@
+{
+  "BasicDetails": {
+    "OrganizationName": "",
+    "OrgAddress": {
+      "FullAddress": "",
+      "City": "",
+      "State": "",
+      "Region": "",
+      "ZipCode": ""
+    },
+    "TotalEmployees": "",
+    "OfficialSite": "",
+    "TaxInformation": {
+      "0fficial_PAN": "",
+      "official_GSTIN": "",
+      "official_TAN": ""
+    }
+  }
+}

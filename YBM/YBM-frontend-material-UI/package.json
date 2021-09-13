@@ -1,0 +1,40 @@
+{
+  "name": "ybm-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3310",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@fontsource/roboto": "^4.5.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/data-grid": "^4.0.0-alpha.33",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/pickers": "^3.3.10",
+    "@material-ui/x-grid-data-generator": "^4.0.0-alpha.33",
+    "axios": "^0.21.1",
+    "babel-plugin-styled-components": "^1.13.2",
+    "date-fns": "^2.22.1",
+    "he": "^1.2.0",
+    "moment": "^2.29.1",
+    "next": "^11.0.1",
+    "react": "17.0.2",
+    "react-currency-format": "^1.0.0",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "react-swipeable-views": "^0.14.0",
+    "recharts": "^2.1.2",
+    "sass": "1.26.3",
+    "use-between": "^0.0.18",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "eslint": "7.31.0",
+    "eslint-config-next": "11.0.1"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "employee_id": "",
+  "basicDetails": {
+    "name": "",
+    "address": "",
+    "contactInformation": {
+      "email": "",
+      "official_mail_id": ""
+    }
+  },
+  "InNoticePeriod": "",
+  "currentPortfolio": {
+    "dateOfJoining": "",
+    "currentWorkingTimePeriod": "",
+    "currentSalary": "",
+    "bankDetails": {
+      "bankName": "",
+      "accountHolderName": "",
+      "accountNumber": "",
+      "accountType": "",
+      "ifscCode": ""
+    },
+    "promotions": [
+      {
+        "promotedFrom": "",
+        "promotedTo": "",
+        "monthOfPromotion": "",
+        "hikeInSalary": ""
+      }
+    ]
+  },
+  "WorkHistory": [
+    {
+      "companyName": "",
+      "designation": "",
+      "workDuration": "",
+      "salary": ""
+    }
+  ]
+}

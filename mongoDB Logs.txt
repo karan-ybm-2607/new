@@ -1,0 +1,11 @@
+Data directory = C:\Program Files\MongoDB\Server\5.0\data\
+
+Log directory =C:\Program Files\MongoDB\Server\5.0\log\
+
+C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe" --version
+"C:\Program Files\MongoDB\Server\5.0\bin\mongo.exe" --version
+
+
+
+Email id -gudiyajain2971@gmail.com
+Password -ybmabc456
